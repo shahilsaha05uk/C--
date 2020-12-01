@@ -24,7 +24,7 @@ int main()
 
 	cout << message << endl;
 	cout << "Firstly what is your full name?" << endl;
-	cin >> name;
+	getline(cin, name);
 	cout << "Hi "<< name <<" lets get started." << endl;
 
 	weight();
@@ -37,7 +37,7 @@ void height()
 {
 	int inches;
 	int	feet{};
-	while (false)
+	while (true)
 	{
 		cout << "Please enter your height in feet:" << endl;
 		cin >> feet;
@@ -96,7 +96,7 @@ int weight()
 		cout << "Please enter the pounds:" << endl;
 		cin >> pounds;
 
-		if (pounds > 0 || pounds < 13)
+		if (pounds < 0 || pounds > 13)
 		{
 			cout << "Pounds must be between 0 and 13" << endl;
 		}
@@ -108,12 +108,14 @@ int weight()
 
 	}
 
-	total_weight = stone / 12 + pounds;
+	total_weight = stone * 12 + pounds;
 	cout << "Your total weight in pounds is: " << total_weight << endl;
 	return total_weight;
 }
 
 void output_bmi(float weight, float height)
 {
-	weight * 703 / (height* height);
+	float bmi;
+	bmi= weight * 703 / (height* height);
+	cout << "Your BMI is: " << bmi << endl;
 }

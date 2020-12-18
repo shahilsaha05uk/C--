@@ -33,7 +33,7 @@ void draw_board() {
 void draw_board_parameters(int guess1, int guess2)
 {
 	system("cls");
-	cout << "Your attempt count is: " << attempt_count;
+	/*cout << "Your attempt count is: " << attempt_count;*/
 	for (int i = 0; i < 10; i++)
 	{
 		if (cards_found[i])
@@ -56,14 +56,14 @@ int main()
 		//draw_board();
 		int guess1;
 		int guess2;
-		cout << "\nSelect 1st value: ";
+		cout << "Select 1st value: ";
 		cin >> guess1;
-		draw_board_parameters(guess1, 0);
+		/*draw_board_parameters(guess1, 0);*/
 		cout << "\nSelect 2nd value: ";
 		cin >> guess2;
-		draw_board_parameters(0, guess2);
-		cout <<"Guess1: "<< cards[guess1]<<endl;
-		cout << "Guess2: " << cards[guess2] << endl;
+		draw_board_parameters(guess1, guess2);
+		cout <<"\nGuess1 (0 to 9): "<< cards[guess1]<<endl;
+		cout << "Guess2 (0 to 9): " << cards[guess2] << endl;
 
 		if (cards[guess1] == cards[guess2]) 
 		{

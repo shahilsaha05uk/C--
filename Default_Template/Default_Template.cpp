@@ -1,65 +1,50 @@
 #include <iostream>
+#include<string>
 
 using namespace std;
 
 
 
-bool IsLooping(bool loop)
+struct Class
 {
+	int id;
+	string name;
+	string courseNumber;
+};
 
-	if (loop == true)
-	{
-		cout << "Playing" << endl;
-	}
-	else
-	{
-		cout << "Stopped" << endl;
-	}
-	return loop;
-}
+struct Student
+{
+	int id;
+	string name;
+	double gpa;
+	int numberofClasses = 3;
+	Class* classes;
+};
+
+Student* _global;
+
 
 int main()
 {
 
-	enum Sound {
-		Play=1, Stop
-	};
+	Student *student;
+	student = new Student[5];
 
-	Sound sound;
+	_global = student;
 
-	bool started = true;
-	bool b= false;
-
-
-		if (IsLooping(b) == false)
-		{
-			sound = Play;
-		}
-		else
-		{
-			sound = Stop;
-		}
-
-		while (started == true)
-		{
-			if (sound == Stop)
-			{
-				cout << "Restart playing" << endl;
-			}
-			else
-			{
-				cout << "Already playing" << endl;
-			}
-		}
-			
-
+	for (int i = 0; i < 2; i++)
+	{
+		cout << "Enter name: ";
+		getline(cin, student->name);
 		
-
-		
-
-
-
+		cout << "Student name: " << student->name << endl;
+	}
+	_global = student;
 
 
+	cout <<"Global stored names: "<< _global->name[0] << endl;
+	cout << "Global stored names: " << _global->name[1] << endl;
 
+	return 0;
 }
+

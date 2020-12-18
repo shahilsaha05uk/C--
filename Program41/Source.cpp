@@ -56,14 +56,17 @@ int main()
 					if (global->case1_selection == 1)
 					{
 						_general->newGeneralAccount();
+						break;
 					}
 					if (global->case1_selection == 2)
 					{
 						_junior->newJuniorAccount();
+						break;
 					}
 					if (global->case1_selection == 3)
 					{
 						_saving->newSavingsAccount();
+						break;
 					}
 					if (global->case1_selection == 4)
 					{

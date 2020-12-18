@@ -69,10 +69,6 @@ void Base::DisplayAccountDetails()
 				b = true;
 				break;
 			}
-			else
-			{
-				cout << "Account not found!!" << endl;
-			}
 
 		}
 		break;

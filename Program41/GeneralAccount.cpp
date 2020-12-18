@@ -30,9 +30,12 @@ void GeneralAccount::newGeneralAccount()
 				cout << "The interest is: " << setprecision(3) << InterestRate(1) << endl;
 				cout << "Balance: ";
 				cin >> _NewAccount.at(i).Balance;
+				if (_NewAccount.at(i).Balance <= 0)
+				{
+					break;
+				}
 
-
-				outFile << _NewAccount.at(i).account_number << " " << _NewAccount.at(i).Forname << " " << _NewAccount.at(i).Surname << " " << _NewAccount.at(i).Address << " " << _NewAccount.at(i).Balance << " " << setprecision(3) << InterestRate(2) << " " << _NewAccount.at(i).Account_Type[2] << endl;
+				outFile << _NewAccount.at(i).account_number << " " << _NewAccount.at(i).Forname << " " << _NewAccount.at(i).Surname << " " << _NewAccount.at(i).Address << " " << _NewAccount.at(i).Balance << " " << setprecision(3) << InterestRate(1) << " " << _NewAccount.at(i).Account_Type[2] << endl;
 			}
 			break;
 		}

@@ -98,7 +98,6 @@ void Base::DeleteAccount()
 				_editDetails.push_back(Edit());
 				_editDetails.at(i).accountNumber= _SaveAccount.account_number;
 				_editDetails.at(i).line = line;
-				cout << _editDetails.at(i).accountNumber << " " << _editDetails.at(i).line << endl;
 				i++;
 			}
 		}
@@ -108,7 +107,7 @@ void Base::DeleteAccount()
 
 	int vecSize = _editDetails.size();
 
-	cout << "input num: ";
+	cout << "Input Account Number: ";
 	cin >> num;
 
 	for (int i = 0; i < vecSize; i++)
@@ -116,6 +115,7 @@ void Base::DeleteAccount()
 		if (num == _editDetails.at(i).accountNumber)
 		{
 			_editDetails.erase(_editDetails.begin() + i);
+			cout << "Your Account has been deleted!!" << endl;
 			break;
 		}
 	}

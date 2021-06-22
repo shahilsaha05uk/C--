@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{74e6fab1-265d-4290-a03f-0a3d1af8c012}</ProjectGuid>
-    <RootNamespace>Tests</RootNamespace>
+    <ProjectGuid>{5196a54c-6134-456b-bd67-97bddb455758}</ProjectGuid>
+    <RootNamespace>LinkedList</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,14 +139,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Text Include="sample.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="HelloWorld.cpp" />
+    <ClCompile Include="LinkedList.cpp" />
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="HelloWorld.h" />
+    <ClInclude Include="LinkedList.h" />
+    <ClInclude Include="structs.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

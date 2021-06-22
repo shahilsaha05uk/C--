@@ -15,20 +15,18 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <Text Include="sample.txt">
-      <Filter>Resource Files</Filter>
-    </Text>
-  </ItemGroup>
-  <ItemGroup>
     <ClCompile Include="Source.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="HelloWorld.cpp">
+    <ClCompile Include="LinkedList.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="HelloWorld.h">
+    <ClInclude Include="structs.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="LinkedList.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

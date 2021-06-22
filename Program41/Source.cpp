@@ -34,7 +34,6 @@ int main()
 		cout << "Enter your selection: ";
 		cin >> user_selection;
 
-		
 		switch (user_selection)
 		{
 		case 1: //ONLY WRITE TO THE FILE

@@ -1,44 +1,63 @@
-#include <iostream>
-#include<fstream>
-#include <string>
-#include<time.h>
-#include<ctype.h>
-#include<stdlib.h>
-#include <stdio.h>
-#include <sstream>
-#include <vector>
+#ifdef _MSC_VER
+#define _CRT_SECURE_NO_WARNINGS
+#endif
+
+#include "HelloWorld.h"
 using namespace std;
 
 
-
+void CountVowels()
+{
+	char vowels[5] = { 'a','e','i','o','u' };
+	int arrSize = sizeof(vowels) / sizeof(vowels[0]);
+	char c;
+	while (true)
+	{
+		cin >> c;
+		for (int i = 0; i < arrSize; i++)
+		{
+			if (c == vowels[i])
+			{
+				cout << "its a vowels" << endl;
+			}
+			else
+			{
+				cout << "Its a consonent" << endl;
+			}
+		}
+		if (c == 'q')
+			break;
+	}
+}
 
 
 int main() {
 
 
-	int num;
-	bool b = false;
-	string blank = { " " };
-	string read;
-	int readNum;
-	fstream file;
-	string tempstring;
-	ofstream temp;
+	cout << "Select one of the following options: " << endl;
+	cout << "1. Calculations" << endl;
+	cout << "2. cos(x) and marks" << endl;
+	cout << "3. Exit" << endl;
+	int selection;
+	cin >> selection;
 
-	vector<string> storestring;
-
-	cout << "Enter the year you want to delete: ";
-	num=2020;
-
-
-	while (b != true)
+	switch (selection)
 	{
-		file.open("source.txt");
-		while (getline(file, read))
-		{
-			
-		}
+	case 1:
+		CountVowels();
+		break;
+	case 2:
+
+		break;
+	case 3:
+		cout << "Thank you for using the system" << endl;
+		break;
+		
+	default:
 		break;
 	}
-	file.close();
+
+
+
+	return 0;
 }

@@ -75,9 +75,7 @@ void LoadScore()
 			getline(infile, line);
 			_records[i].score = score;
 			_records[i].name = line;
-
 			i++;
-
 			if (i > 9)
 			{
 				b = true;

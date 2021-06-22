@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{74e6fab1-265d-4290-a03f-0a3d1af8c012}</ProjectGuid>
-    <RootNamespace>Tests</RootNamespace>
+    <ProjectGuid>{edca3515-ccec-4952-97b1-eb1210adaa84}</ProjectGuid>
+    <RootNamespace>XLStream</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,14 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Text Include="sample.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="HelloWorld.cpp" />
-    <ClCompile Include="Source.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="HelloWorld.h" />
+    <ClCompile Include="XLStream.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

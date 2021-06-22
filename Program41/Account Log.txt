@@ -1,5 +1,1 @@
-73 Suraj Saha India 100 0.015 JUNIOR
-64 Shah Saha India 10000 0.015 JUNIOR
-182 Saala Saaha India 200 0.015 JUNIOR
-436 Shahaha awdfasd asdfasdf 100 0.015 JUNIOR
-897 ed asdf asdf 1234 0.055 JUNIOR
+260 Shah Saha India 300 0.015 JUNIOR

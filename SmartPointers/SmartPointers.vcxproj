@@ -21,8 +21,8 @@
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{74e6fab1-265d-4290-a03f-0a3d1af8c012}</ProjectGuid>
-    <RootNamespace>Tests</RootNamespace>
+    <ProjectGuid>{47b22098-9f7f-426a-b4fb-76d9e572d48a}</ProjectGuid>
+    <RootNamespace>SmartPointers</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -139,14 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <Text Include="sample.txt" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="HelloWorld.cpp" />
     <ClCompile Include="Source.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="HelloWorld.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

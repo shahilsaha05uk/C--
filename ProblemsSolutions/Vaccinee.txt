@@ -1,0 +1,4 @@
+Name = Covid, 
+Code = 1234, 
+country = UK, 
+dr=2

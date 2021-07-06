@@ -16,8 +16,6 @@ myType adding(myType a, myType b)
 template<class T>
 class Calculator
 {
-private:
-
 public:
 	void add(T v1, T v2)
 	{
@@ -28,17 +26,12 @@ public:
 	{
 		add(val1, val2);
 	}
-
-
-
 };
 
 int main()
 {
 	cout << "Adding: " << adding(5, 5) << endl;
 	Calculator<float>* c = new Calculator<float>(2.0f,10.5f);
-	Calculator<float> d(10,20);
-
-
+	Calculator<int> d(10,20);
 	return 0;
 }
